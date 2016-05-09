@@ -14,6 +14,7 @@ except:
     import json
 
 from datetime import datetime
+from endpoints_bulk_v2 import mapping_table as mapping_table_bulk
 from endpoints_v1 import mapping_table as mapping_table_v1
 from endpoints_v2 import mapping_table as mapping_table_v2
 from httplib import responses
@@ -49,7 +50,9 @@ class Eloqua(object):
     def __init__(self, username, password, api_version=1, base_url=None, client_args={}):
         self.username = username
         self.password = password
-        if api_version == 1:
+        if api_version == 0:
+            self.mapping_table = mapping_table_bulk
+        elif api_version == 1:
             self.mapping_table = mapping_table_v1
         elif api_version == 2:
             self.mapping_table = mapping_table_v2
