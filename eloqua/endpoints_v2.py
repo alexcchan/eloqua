@@ -19,4 +19,16 @@ mapping_table = {
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
 
+    # Campaign folders - UNDOCUMENTED
+    'get_campaign_folder': {
+        'method': 'GET',
+        'path': '/assets/campaign/folder/{{campaign_folder_id}}',
+        'valid_params': ['depth']
+    },
+    'list_campaign_folders': {
+        'method': 'GET',
+        'path': '/assets/campaign/folders',
+        'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+
 }

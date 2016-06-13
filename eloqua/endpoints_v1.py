@@ -19,6 +19,18 @@ mapping_table = {
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
 
+    # Contact list folders - UNDOCUMENTED
+    'get_contact_list_folder': {
+        'method': 'GET',
+        'path': '/assets/contact/list/folder/{{contact_list_folder_id}}',
+        'valid_params': ['depth']
+    },
+    'list_contact_list_folders': {
+        'method': 'GET',
+        'path': '/assets/contact/list/folders',
+        'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+
     # Contact segments
     'get_contact_segment': {
         'method': 'GET',
@@ -28,6 +40,18 @@ mapping_table = {
     'list_contact_segments': {
         'method': 'GET',
         'path': '/assets/contact/segments',
+        'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+
+    # Contact segment folders - UNDOCUMENTED
+    'get_contact_segment_folder': {
+        'method': 'GET',
+        'path': '/assets/contact/segment/folder/{{contact_segment_folder_id}}',
+        'valid_params': ['depth']
+    },
+    'list_contact_segment_folders': {
+        'method': 'GET',
+        'path': '/assets/contact/segment/folders',
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
 
@@ -44,6 +68,11 @@ mapping_table = {
     },
 
     # Email folders
+    'get_email_folder': {
+        'method': 'GET',
+        'path': '/assets/email/folder/{{email_folder_id}}',
+        'valid_params': ['depth']
+    },
     'list_email_folders': {
         'method': 'GET',
         'path': '/assets/email/folders',
