@@ -80,6 +80,11 @@ mapping_table = {
     },
 
     # Email groups
+    'get_email_group': {
+        'method': 'GET',
+        'path': '/assets/email/group/{{email_group_id}}',
+        'valid_params': ['depth']
+    },
     'list_email_groups': {
         'method': 'GET',
         'path': '/assets/email/groups',
