@@ -86,4 +86,16 @@ mapping_table = {
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
 
+    # Templates
+    'get_template': {
+        'method': 'GET',
+        'path': '/assets/template/{{template_id}}',
+        'valid_params': ['depth']
+    },
+    'list_templates': {
+        'method': 'GET',
+        'path': '/assets/templates',
+        'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+
 }
