@@ -79,6 +79,18 @@ mapping_table = {
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
 
+    # Email footers
+    'get_email_footer': {
+        'method': 'GET',
+        'path': '/assets/email/footer/{{email_footer_id}}',
+        'valid_params': ['depth']
+    },
+    'list_email_footers': {
+        'method': 'GET',
+        'path': '/assets/email/footers',
+        'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+
     # Email groups
     'get_email_group': {
         'method': 'GET',
@@ -88,6 +100,18 @@ mapping_table = {
     'list_email_groups': {
         'method': 'GET',
         'path': '/assets/email/groups',
+        'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+
+    # Email headers
+    'get_email_header': {
+        'method': 'GET',
+        'path': '/assets/email/header/{{email_header_id}}',
+        'valid_params': ['depth']
+    },
+    'list_email_headers': {
+        'method': 'GET',
+        'path': '/assets/email/headers',
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
 
