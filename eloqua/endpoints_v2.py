@@ -18,6 +18,11 @@ mapping_table = {
         'path': '/assets/campaigns',
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
+    'create_campaign': {
+        'method': 'POST',
+        'path': '/assets/campaign',
+        'status': 201
+    },
 
     # Campaign folders - UNDOCUMENTED
     'get_campaign_folder': {

@@ -15,12 +15,29 @@ mapping_table = {
     },
     'get_contacts_export_data': {
         'method': 'GET',
-        'path': '/contacts/export/{{export_id}}/data',
+        'path': '/contacts/exports/{{export_id}}/data',
         'valid_params': ['limit','offset','totalResults']
     },
     'delete_contacts_export_data': {
         'method': 'DELETE',
-        'path': '/contacts/export/{{export_id}}/data',
+        'path': '/contacts/exports/{{export_id}}/data',
+        'status': 204
+    },
+
+    # Contacts import
+    'create_contacts_import': {
+        'method': 'POST',
+        'path': '/contacts/imports',
+        'status': 201
+    },
+    'get_contacts_import_data': {
+        'method': 'GET',
+        'path': '/contacts/imports/{{import_id}}/data',
+        'valid_params': ['limit','offset','totalResults']
+    },
+    'delete_contacts_import_data': {
+        'method': 'DELETE',
+        'path': '/contacts/imports/{{import_id}}/data',
         'status': 204
     },
 

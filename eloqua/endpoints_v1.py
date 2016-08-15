@@ -18,6 +18,11 @@ mapping_table = {
         'path': '/assets/contact/lists',
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
+    'create_contact_list': {
+        'method': 'POST',
+        'path': '/assets/contact/list',
+        'status': 201
+    },
 
     # Contact list folders - UNDOCUMENTED
     'get_contact_list_folder': {
@@ -42,6 +47,11 @@ mapping_table = {
         'path': '/assets/contact/segments',
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
     },
+    'create_contact_segment': {
+        'method': 'POST',
+        'path': '/assets/contact/segment',
+        'status': 201
+    },
 
     # Contact segment folders - UNDOCUMENTED
     'get_contact_segment_folder': {
@@ -65,6 +75,11 @@ mapping_table = {
         'method': 'GET',
         'path': '/assets/emails',
         'valid_params': ['depth','count','page','search','sort','dir','orderBy','lastUpdatedAt']
+    },
+    'create_email': {
+        'method': 'POST',
+        'path': '/assets/email',
+        'status': 201
     },
 
     # Email folders
