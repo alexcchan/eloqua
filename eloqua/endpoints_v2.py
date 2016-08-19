@@ -30,7 +30,8 @@ mapping_table = {
     'activate_campaign': {
         'method': 'POST',
         'path': '/assets/campaign/active/{{campaign_id}}',
-        'valid_params': ['activateNow','scheduledFor','runAsUserId']
+        'valid_params': ['activateNow','scheduledFor','runAsUserId'],
+        'status': 201
     },
 
     # Campaign folders - UNDOCUMENTED
