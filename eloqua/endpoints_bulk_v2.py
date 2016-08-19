@@ -30,10 +30,10 @@ mapping_table = {
         'path': '/contacts/imports',
         'status': 201
     },
-    'get_contacts_import_data': {
-        'method': 'GET',
+    'create_contacts_import_data': {
+        'method': 'POST',
         'path': '/contacts/imports/{{import_id}}/data',
-        'valid_params': ['limit','offset','totalResults']
+        'status': 204
     },
     'delete_contacts_import_data': {
         'method': 'DELETE',
