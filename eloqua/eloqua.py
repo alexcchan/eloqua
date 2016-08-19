@@ -112,6 +112,9 @@ class Eloqua(object):
                     body = urllib.urlencode(body)
                 elif content_type == 'application/json':
                     body = json.dumps(body)
+            elif isinstance(body,list):
+                if content_type == 'application/json':
+                    body = json.dumps(body)
         response,content = self.client.request(url, method=method, body=body,
                 headers=headers)
         return self._response_handler(response, content, status)
