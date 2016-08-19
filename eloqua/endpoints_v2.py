@@ -23,6 +23,10 @@ mapping_table = {
         'path': '/assets/campaign',
         'status': 201
     },
+    'update_campaign': {
+        'method': 'PUT',
+        'path': '/assets/campaign/{{campaign_id}}'
+    },
     'activate_campaign': {
         'method': 'POST',
         'path': '/assets/campaign/active/{{campaign_id}}',
